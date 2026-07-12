@@ -4,17 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,follow">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<title>404 · Pagina nu există · curatbucuresti.ro</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<style>html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}</style>
 <link rel="icon" type="image/png" href="assets/favicon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&amp;family=Space+Grotesk:wght@400..700&amp;family=Geist+Mono:wght@400..700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" />
+<link rel="stylesheet" href="assets/fonts.css">
 <style>
 html,body{height:100%}
 body{margin:0;background:#0E0F12;color:#F4F1EA;font-family:'Space Grotesk',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
@@ -28,12 +20,16 @@ a:focus-visible{outline:2px solid #EA7B2C;outline-offset:3px}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
 </style>
-</helmet>
 
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-k3kQo8UDI-1M0wlSfdnoLg.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo-k3kQo8UDI-1M0wlSfdfoLnnA.woff2" crossorigin>
+</head>
+<body>
+<div id="dc-root"><div class="sc-host">
 <div style="position:relative;min-height:100vh;display:flex;flex-direction:column;background-image:radial-gradient(1000px 600px at 75% 30%, rgba(234,123,44,.09), transparent 60%),repeating-linear-gradient(0deg, rgba(244,241,234,.03) 0px, rgba(244,241,234,.03) 1px, transparent 1px, transparent 88px),repeating-linear-gradient(90deg, rgba(244,241,234,.03) 0px, rgba(244,241,234,.03) 1px, transparent 1px, transparent 88px);overflow:hidden">
   <header style="display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.95rem clamp(1.25rem,4vw,3.25rem)">
     <a href="index.html" style="display:inline-flex;align-items:baseline;font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:800;font-size:1.08rem;letter-spacing:-.02em;color:#F4F1EA">curat<span style="color:#EA7B2C">bucurești</span><span style="font-family:'Geist Mono',monospace;font-weight:500;font-size:.78rem;letter-spacing:.04em;color:#9A968C;margin-left:.1rem">.ro</span></a>
-    <a href="{{ waGeneral }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.55rem;background:#EA7B2C;color:#0E0F12;font-weight:600;font-size:.82rem;padding:.62rem 1.1rem;border-radius:2px;transition:background .35s cubic-bezier(.16,1,.3,1)" style-hover="background:#F4F1EA">WhatsApp</a>
+    <a href="https://wa.me/40700000000?text=Bun%C4%83%20ziua%2C%20vreau%20s%C4%83%20%C3%AEnchiriez%20%5Baparat%5D%20pe%20%5Bdat%C4%83%5D." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.55rem;background:#EA7B2C;color:#0E0F12;font-weight:600;font-size:.82rem;padding:.62rem 1.1rem;border-radius:2px;transition:background .35s cubic-bezier(.16,1,.3,1)" style-hover="background:#F4F1EA">WhatsApp</a>
   </header>
   <img src="assets/perie-3d.png" alt="" aria-hidden="true" style="position:absolute;right:clamp(-8rem,-6vw,-3rem);top:50%;width:clamp(300px,42vw,640px);margin-top:-14%;opacity:.9;filter:drop-shadow(0 60px 80px rgba(0,0,0,.6));animation:cbFloat 9s ease-in-out infinite;pointer-events:none" />
   <main style="position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center;max-width:1320px;width:100%;margin:0 auto;padding:2rem clamp(1.25rem,4vw,3.25rem) 4rem;box-sizing:border-box">
@@ -54,18 +50,6 @@ a:focus-visible{outline:2px solid #EA7B2C;outline-offset:3px}
     <span>Titan · Sector 3 · București</span>
   </footer>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{
-  &quot;whatsapp&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;40700000000&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Contact&quot; }
-}">
-class Component extends DCLogic {
-  renderVals() {
-    const wa = String(this.props.whatsapp ?? '40700000000').replace(/[^0-9]/g, '');
-    return {
-      waGeneral: 'https://wa.me/' + wa + '?text=' + encodeURIComponent('Bună ziua, vreau să închiriez [aparat] pe [dată].')
-    };
-  }
-}
-</script>
+</div></div>
 </body>
 </html>
